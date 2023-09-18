@@ -4,7 +4,78 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+* {
+  font-family: sans-serif;
+}
+
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 200 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
+  margin: 0 auto;
+  height: 100%;
+  background-image: url(./../images/bgtile.png);
+  background-repeat: repeat-x;
+  background-size: 100% 40%;
+}
+
+.main-section {
+  padding: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-button {
+  display: flex;
+  justify-content: space-between;
+
+  align-self: center;
+  background-image: linear-gradient(#1c5380 5% 25%, #06365f 70%);
+  /* box-shadow: 3px 3px 3px #06365f; */
+  border-radius: 5px;
+
+  text-align: center;
+  padding: 15px;
+}
+
+.home-button a {
+  color: aliceblue;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.company-info {
+  width: 600px;
+}
+.company-description {
+  padding: 25px;
+  background-image: url(./../images/frame.png);
+  background: transparent url(./../images/frame.png) no-repeat center / cover;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.footer-nav > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #06365f;
+  font-weight: bold;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: space-around;
 }
